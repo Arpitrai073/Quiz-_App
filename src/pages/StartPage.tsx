@@ -73,7 +73,20 @@ function StartPage() {
       <div className="start-container">
         <h1 className="start-title">Welcome to the Quiz</h1>
         <p className="start-subtitle">Test your knowledge with 15 challenging questions</p>
-        
+
+        <section className="rules-card">
+          <h2 className="rules-title">Quiz Rules</h2>
+          <ul className="rules-list">
+            <li>You will get <strong>15 questions</strong> fetched from the Open Trivia Database.</li>
+            <li>You have a total of <strong>30 minutes</strong> to complete the quiz.</li>
+            <li>You can move between questions using the <strong>Previous</strong> and <strong>Next</strong> buttons.</li>
+            <li>Use the <strong>overview panel</strong> on the right to jump to any question.</li>
+            <li>The quiz will <strong>auto-submit</strong> when the timer reaches zero.</li>
+            <li>You can also <strong>submit manually</strong> at any time using the Submit button.</li>
+            <li>Your final report will show your answer vs the correct answer for each question.</li>
+          </ul>
+        </section>
+
         <form onSubmit={handleSubmit} className="start-form">
           <div className="form-group">
             <label htmlFor="email" className="form-label">
