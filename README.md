@@ -173,31 +173,5 @@ The application is fully responsive and adapts to different screen sizes:
 - ✅ Modern gradient UI design
 - ✅ Loading states and error handling
 
-## Deployment
 
-The application can be deployed to various platforms:
-
-### Netlify
-1. Build the project: `npm run build`
-2. Deploy the `dist` folder to Netlify
-3. Configure redirects for client-side routing (add `_redirects` file with `/* /index.html 200`)
-
-### Vercel
-1. Connect your repository to Vercel
-2. Vercel will automatically detect Vite and configure the build
-3. Deploy with default settings
-
-### GitHub Pages
-1. Install `gh-pages`: `npm install --save-dev gh-pages`
-2. Add to `package.json`:
-   ```json
-   "scripts": {
-     "deploy": "npm run build && gh-pages -d dist"
-   }
-   ```
-3. Run `npm run deploy`
-
-## License
-
-This project was created as a coding assignment for CausalFunnel.
 
